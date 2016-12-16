@@ -129,7 +129,7 @@ class Label(view.View):
         text = text.replace("\r\n", "\n").replace("\r", "\n")
         wants_shadows = (self.text_shadow_color is not None and
                          self.text_shadow_offset is not None)
-
+        print "render label with text: \"" + text + "\""
         if self._wrap_mode == CLIP:
             self._text = re.sub(r'[\n\t]{2, }', ' ', text)
             self.text_size = self._render_line(self._text, wants_shadows)

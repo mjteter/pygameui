@@ -88,7 +88,7 @@ def init(name='', window_size=(640, 480)):
     theme.init()
 
 
-def run():
+def run(loopFunc = None, *loopArgs, **loopKwArgs):
     assert len(scene.stack) > 0
 
     clock = pygame.time.Clock()
@@ -153,3 +153,5 @@ def run():
         scene.current.draw()
         window_surface.blit(scene.current.surface, (0, 0))
         pygame.display.flip()
+
+        loopFunc(*loopArgs, **loopKwArgs)

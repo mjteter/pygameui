@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/pygameui.iml" filepath="$PROJECT_DIR$/.idea/pygameui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../wthrStat/.idea/wthrStat.iml" filepath="$PROJECT_DIR$/../../wthrStat/.idea/wthrStat.iml" />
+    </modules>
+  </component>
+</project>
